@@ -1,0 +1,18 @@
+pane	Development	1	:Local Dev	1	:*	1	:/Volumes/Dev/sandbox	0	bash	:
+pane	Development	1	:Local Dev	1	:*	2	:/Volumes/Dev/meet-memcache-client	0	bash	:
+pane	Development	1	:Local Dev	1	:*	3	:/Volumes/Dev/hipchat-export	1	bash	:
+pane	Development	2	:Sandbox/Test	0	:	1	:/Volumes/Dev/meet-stats-helper	1	bash	:
+pane	Development	2	:Sandbox/Test	0	:	2	:/Users/oscar	0	bash	:
+pane	Development	3	:Finance Reports	0	:	1	:/Users/oscar	0	bash	:
+pane	Development	3	:Finance Reports	0	:	2	:/Users/oscar	1	bash	:
+pane	Development	4	:Prod	0	:-	1	:/Users/oscar	1	bash	:
+pane	Development	4	:Prod	0	:-	2	:/Users/oscar	0	bash	:
+pane	Development	5	:Hackd14	0	:	1	:/Volumes/Dev/nodejs/broadcaster	0	node	:node client.js
+pane	Development	5	:Hackd14	0	:	2	:/Volumes/Dev/nodejs/broadcaster	1	bash	:
+pane	Development	5	:Hackd14	0	:	3	:/Volumes/Dev/nodejs/broadcaster	0	node	:node client2.js
+window	Development	1	1	:*	0c62,238x59,0,0{110x59,0,0,0,127x59,111,0[127x29,111,0,5,127x29,111,30,4]}
+window	Development	2	0	:	557a,238x59,0,0{119x59,0,0,1,118x59,120,0,2}
+window	Development	3	0	:	557e,238x59,0,0{119x59,0,0,3,118x59,120,0,6}
+window	Development	4	0	:-	5583,238x59,0,0{119x59,0,0,7,118x59,120,0,8}
+window	Development	5	0	:	c536,238x59,0,0[238x29,0,0,9,238x29,0,30{119x29,0,30,10,118x29,120,30,11}]
+state	Development	

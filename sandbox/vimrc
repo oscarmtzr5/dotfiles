@@ -1,0 +1,17 @@
+filetype indent plugin on
+syntax on
+colorscheme ir_black
+
+set smartindent
+set smarttab
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set ignorecase
+highlight ExtraWhiteSpace ctermbg=red guibg=red
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+
+match ExtraWhiteSpace /\s\+$/
+2match OverLength /\%151v.\+/
+
+set t_Co=256

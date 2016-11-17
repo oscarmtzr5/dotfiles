@@ -1,0 +1,19 @@
+pane	Development	1	:Local Dev	0	:-	1	:/Volumes/Dev/sandbox/jackd	1	bash	:
+pane	Development	1	:Local Dev	0	:-	2	:/Volumes/Dev/meet-memcache-client	0	bash	:
+pane	Development	1	:Local Dev	0	:-	3	:/Volumes/Dev/batsignal	0	bash	:
+pane	Development	2	:Sandbox/Test	1	:*Z	1	:/Volumes/Dev/meet-stream-viewer	0	bash	:
+pane	Development	2	:Sandbox/Test	1	:*Z	2	:/Users/oscar	1	bash	:
+pane	Development	2	:Sandbox/Test	1	:*Z	3	:/Volumes/Dev/meet-stats-helper	0	node	:node event-counter-http.js -e test
+pane	Development	3	:Finance Reports	0	:	1	:/Users/oscar	0	bash	:
+pane	Development	3	:Finance Reports	0	:	2	:/Users/oscar	1	bash	:
+pane	Development	4	:Prod	0	:	1	:/Users/oscar	1	bash	:
+pane	Development	4	:Prod	0	:	2	:/Users/oscar	0	bash	:
+pane	Development	5	:Hackd14	0	:	1	:/Volumes/Dev/nodejs/broadcaster	0	bash	:
+pane	Development	5	:Hackd14	0	:	2	:/Volumes/Dev/nodejs/broadcaster	1	bash	:
+pane	Development	5	:Hackd14	0	:	3	:/Volumes/Dev/nodejs/broadcaster	0	bash	:
+window	Development	1	0	:-	7001,238x57,0,0{110x57,0,0,1,127x57,111,0[127x28,111,0,2,127x28,111,29,3]}
+window	Development	2	1	:*Z	d7fc,238x57,0,0{119x57,0,0,4,118x57,120,0[118x28,120,0,5,118x28,120,29,15]}
+window	Development	3	0	:	cc80,238x57,0,0{119x57,0,0,6,118x57,120,0,7}
+window	Development	4	0	:	6698,238x57,0,0{119x57,0,0,9,118x57,120,0,13}
+window	Development	5	0	:	b194,238x57,0,0[238x28,0,0,10,238x28,0,29{119x28,0,29,11,118x28,120,29,12}]
+state	Development	

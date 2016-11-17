@@ -1,0 +1,24 @@
+# .bash_profile
+
+jspack( )
+{
+    /usr/local/bin/jsPacker.pl -i $1.unpack.js -o $1.js -s
+}
+
+csspack( )
+{
+    csscompress.php $1.unpack.css > $1.css
+}
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+[ -f /etc/bash_completion ] && . /etc/bash_completion
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH

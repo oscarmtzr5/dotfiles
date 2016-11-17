@@ -1,0 +1,18 @@
+pane	Development	1	:Local Dev	1	:*	1	:/Volumes/Dev/sandbox	1	bash	:
+pane	Development	2	:Sandbox	0	:-	1	:/Volumes/Dev/sandbox	1	bash	:-bash
+pane	Development	3	:Hackd-mini	0	:	1	:/Volumes/Dev	0	bash	:
+pane	Development	3	:Hackd-mini	0	:	2	:/Volumes/Dev	0	bash	:
+pane	Development	3	:Hackd-mini	0	:	3	:/Volumes/Dev/sandbox/jackd	1	bash	:
+pane	Development	4	:Hackd-Gus	0	:	1	:/Volumes/Dev/tasd	0	bash	:
+pane	Development	4	:Hackd-Gus	0	:	2	:/Volumes/Dev/tasd	1	bash	:
+pane	Development	4	:Hackd-Gus	0	:	3	:/Volumes/Dev/tasd	0	bash	:
+pane	rollup	1	:Dev01/Ops02	1	:*	1	:/Users/oscar	0	ssh	:ssh omartinez@dev01
+pane	rollup	1	:Dev01/Ops02	1	:*	2	:/Users/oscar	1	ssh	:ssh omartinez@ops02
+pane	rollup	2	:Consumers	0	:-	1	:/Users/oscar	1	bash	:
+window	Development	1	1	:*	d55e,238x59,0,0,1
+window	Development	2	0	:-	d55d,238x59,0,0,0
+window	Development	3	0	:	8b8f,238x59,0,0{119x59,0,0,2,118x59,120,0[118x29,120,0,3,118x29,120,30,4]}
+window	Development	4	0	:	f3a5,238x59,0,0[238x44,0,0{119x44,0,0,5,118x44,120,0,7},238x14,0,45,6]
+window	rollup	1	1	:*	0cdf,238x59,0,0{118x59,0,0,8,119x59,119,0,10}
+window	rollup	2	0	:-	d566,238x59,0,0,9
+state	rollup	

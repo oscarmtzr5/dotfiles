@@ -1,0 +1,32 @@
+alias ll='ls -l --group-directories-first'
+alias la='ls -hF --color'
+
+
+rgrep( )
+ {
+   repo grep $1
+ }
+
+changePrompt( )
+{
+  DIR=$(pwd)
+  ME=$(whoami)
+
+  if [[ $DIR == *$ME* ]]
+  then
+    export PS1="\e[0;0m[\u@\h \W]\$ \e[m";
+  else
+    export PS1="\e[0;31m[\u@\h \W]\$ \e[m";
+  fi
+}
+
+function cd ( )
+{
+  builtin cd "$@" && changePrompt;
+}
+
+export NODE_PATH=/usr/local/lib/node
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages/
+
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

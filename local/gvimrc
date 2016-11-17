@@ -1,0 +1,28 @@
+filetype indent plugin on
+syntax on
+
+set go-=T
+
+set smartindent
+set smarttab
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set ignorecase
+highlight ExtraWhiteSpace ctermbg=red guibg=red
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+
+match ExtraWhiteSpace /\s\+$/
+2match OverLength /\%151v.\+/
+
+"set t_Co=256
+
+colorscheme ir_black
+set bg=dark
+
+if &background == "dark"
+   hi normal guibg=black
+   set transparency=8
+endif
+
+

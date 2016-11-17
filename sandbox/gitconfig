@@ -1,0 +1,9 @@
+[color]
+	ui = auto
+[user]
+	name = omartinez
+	email = omartinez@meetme.com
+[http]
+	sslVerify = false
+[core]
+	excludesfile = /home/omartinez/.gitignore
