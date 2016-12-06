@@ -1,0 +1,32 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+add-gerrit() {
+  git remote add gerrit ssh://$USER@gerrit.meetmecorp.com:29418/`git remote -v | grep push | cut -d / -f 4,5 | cut -d . -f 1 | grep -v $USER | cut -d ' ' -f 1`
+  gitdir=$(git rev-parse --git-dir)
+  scp -p -P 29418 $USER@gerrit.meetmecorp.com:hooks/commit-msg ${gitdir}/hooks/
+  git fetch gerrit
+}
+
+pull-gerrit-reviews()
+{
+  for DIR in `find | grep .git$`; do
+    pushd $DIR/..
+    git stash
+    add-gerrit
+    curl -sk --digest --user "$USER:rfdQ/+Yw3DWx54gAi7ARYmCqupTGugif0BceGkM+KA" "https://gerrit.meetmecorp.com/a/changes/?q=owner:$USER@meetme.com+status:open+project:`git remote -v | grep origin | cut -d '/' -f 4- | cut -d '.' -f 1 | head -1`&o=CURRENT_REVISION&o=DOWNLOAD_COMMANDS" | grep 'Cherry Pick' | cut -d '"' -f 4 | sed "s/\\\\u0026/\&/g"  | bash
+    git stash pop
+    popd;
+  done
+}
+
+cache-clear()
+{
+  curl http://127.0.0.1/clearCache.php
+}
+
